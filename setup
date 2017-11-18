@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "Symlinking vim/ to ~/.vim"
+ln -s $DIR/vim $HOME/.vim
+
+echo "Symlinking vimrc to ~/.vimrc"
+ln -s $DIR/vimrc $HOME/.vimrc
+
+echo "Symlinking tmux.conf to ~/.tmux.conf"
+ln -s $DIR/tmux.conf $HOME/.tmux.conf
+
+vim +PluginInstall +qall
