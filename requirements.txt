@@ -1,0 +1,13 @@
+# apt-get
+vim (huge, with python & system clipboard support)
+tmux
+curl
+python-dev
+python-virtualenv
+virtualenvwrapper
+exuberant-ctags
+
+# pip
+flake8
+pylint
+jedi
