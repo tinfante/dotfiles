@@ -11,4 +11,7 @@ ln -s $DIR/vimrc $HOME/.vimrc
 echo "Symlinking tmux.conf to ~/.tmux.conf"
 ln -s $DIR/tmux.conf $HOME/.tmux.conf
 
+echo "Symlinking inputrc to ~/.inputrc"
+ln -s $DIR/inputrc $HOME/.inputrc
+
 vim +PluginInstall +qall
