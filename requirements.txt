@@ -6,6 +6,7 @@ python-dev
 python-virtualenv
 virtualenvwrapper
 exuberant-ctags
+xclip
 
 # pip
 flake8
