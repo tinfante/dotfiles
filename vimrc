@@ -165,6 +165,7 @@ set pastetoggle=<F9>
 
 " Filetype specific <F5> mapping
 au FileType python nmap <F5> :!python -i %<CR>
+au FileType c nmap <F5> :!gcc % -o %<<CR>
 
 syntax on
 colorscheme jellybeans
