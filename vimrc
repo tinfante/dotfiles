@@ -20,6 +20,8 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fireplace'
+Plugin 'sophacles/vim-processing'
 
 call vundle#end()
 filetype plugin indent on 
@@ -165,6 +167,8 @@ set pastetoggle=<F9>
 
 " Filetype specific <F5> mapping
 au FileType python nmap <F5> :!python -i %<CR>
+au FileType clojure nmap <F5> :Require!<CR>
+au FileType processing nmap <F5> :make<CR>
 au FileType c nmap <F5> :!gcc % -o %<<CR>
 
 syntax on
