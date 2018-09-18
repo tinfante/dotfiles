@@ -14,4 +14,15 @@ ln -s $DIR/tmux.conf $HOME/.tmux.conf
 echo "Symlinking inputrc to ~/.inputrc"
 ln -s $DIR/inputrc $HOME/.inputrc
 
+echo "Symlinking profiles.clj to ~/.lein/profiles.clj"
+if [ ! -d $HOME/.lein ]; then
+  mkdir $HOME/.lein
+fi
+if [ -f $HOME/.lein/profiles.clj ]; then
+    cp $HOME/.lein/profiles.clj $HOME/.lein/profiles.clj.old
+    rm $HOME/.lein/profiles.clj
+fi
+ln -s $DIR/lein/profiles.clj $HOME/.lein/profiles.clj
+
+
 vim +PluginInstall +qall
