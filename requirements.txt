@@ -1,14 +1,20 @@
-# apt-get
-vim (huge, with python & system clipboard support)
-tmux
-curl
-python-dev
-python-virtualenv
-virtualenvwrapper
-exuberant-ctags
-xclip
+# with apt
+# + vim (huge, with python & system clipboard support)
+# + tmux
+# + curl
+# + python-dev
+# + python-virtualenv
+# + virtualenvwrapper
+# + exuberant-ctags
+# + xclip
+# + xdotool
 
-# pip
-flake8
-pylint
-jedi
+# for vim-markdown-preview to work
+# sudo update-alternatives --config x-www-browser
+# sudo update-alternatives --config gnome-www-browser
+
+# system-wide pip
+# + flake8
+# + pylint
+# + jedi
+# + grip

@@ -22,6 +22,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fireplace'
 Plugin 'sophacles/vim-processing'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 
 call vundle#end()
 filetype plugin indent on 
@@ -43,6 +44,9 @@ let g:NERDCustomDelimiters = { 'python': { 'left': '#', 'leftAlt': '"""', 'right
 let g:snips_author = 'Tomás Infante'
 let g:snips_email = 'tomasinfante@gmail.com'
 let g:snips_github = 'https://github.com/tinfante/'
+
+" markdown-previe config
+let vim_markdown_preview_github=1
 
 " Make backspace and del behave
 set bs=2
