@@ -45,6 +45,10 @@ let g:snips_author = 'Tomás Infante'
 let g:snips_email = 'tomasinfante@gmail.com'
 let g:snips_github = 'https://github.com/tinfante/'
 
+" syntastic config
+let g:syntastic_python_checkers = ['bandit', 'flake8', 'pylint']
+let g:syntastic_aggregate_errors = 1
+
 " markdown-previe config
 let vim_markdown_preview_github=1
 
