@@ -178,6 +178,7 @@ au FileType python nmap <F5> :!python -i %<CR>
 au FileType clojure nmap <F5> :Require!<CR>
 au FileType processing nmap <F5> :make<CR>
 au FileType c nmap <F5> :!gcc % -o %<<CR>
+au FileType markdown nmap <F5> :call Vim_Markdown_Preview()<CR>
 
 syntax on
 colorscheme jellybeans
